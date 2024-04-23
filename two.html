@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stringency Index vs Accident Casualties</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Pandemic-carwash_small.jpg'); /* Ensure this is the correct path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            padding-top: 100px; /* Space for the fixed navbar */
+        }
+        .navbar {
+            z-index: 1000; /* Ensures the navbar is always on top */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="covid_1.html">Covid Cases per Country</a>
+                <a class="nav-item nav-link" href="covid_2.html">Daily Covid Cases</a>
+                <a class="nav-item nav-link" href="covid_3.html">Daily Covid Deaths</a>
+                <a class="nav-item nav-link" href="covid_4.html">Stringency Index</a>
+                <a class="nav-item nav-link" href="car_1.html">Accident Severity by Vehicle Type</a>
+                <a class="nav-item nav-link" href="car_2.html">Casualties by Location</a>
+                <a class="nav-item nav-link" href="air_1.html">Timeline of Airplane Fatalities</a>
+                <a class="nav-item nav-link" href="air_2.html">Air Fatalities per Location</a>
+                <a class="nav-item nav-link" href="all.html">Accidents vs Covid Rate</a>
+                <a class="nav-item nav-link active" href="two.html">Stringency Index vs Accident Casualties</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Updated Tableau Visualization Embed Code -->
+        <div class='tableauPlaceholder' id='viz1713862397304' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='Stringency Index vs Accident Casualities' src='https://public.tableau.com/static/images/St/StringencyIndexvsAccidentCasualities/StringencyIndexvsAccidentCasualities/1_rss.png' style='border: none'/></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='StringencyIndexvsAccidentCasualities/StringencyIndexvsAccidentCasualities' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/St/StringencyIndexvsAccidentCasualities/StringencyIndexvsAccidentCasualities/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1713862397304');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width='100%'; vizElement.style.height=(divElement.offsetWidth*0.90)+'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
