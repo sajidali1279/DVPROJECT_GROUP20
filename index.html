@@ -9,32 +9,51 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('Pandemic-carwash_small.jpg');
+            background-image: url('Pandemic-carwash_small.jpg'); /* Ensure the path to your background image is correct */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            position: relative; /* Required for the pseudo-element to position correctly */
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 10; /* Ensure the border appears above the background */
+        }
+        .container {
+            padding-top: 120px; /* Space for the fixed navbar */
+            color: white; /* Ensures text is visible against the dark background */
         }
         .description {
             margin-top: 20px;
-            color: white;
         }
-        .card {
-            background-color: rgba(0,0,0,0.6);
-            padding: 20px;
-            border-radius: 8px;
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+        }
+        .p-right-gap {
+            padding-right: 500px; /* Right padding to create a gap on the right side */
+        }
+        ul {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand active" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <!-- Dynamic links for each visualization, each in its own new tab -->
+                <!-- Navigation links for each visualization -->
                 <a class="nav-item nav-link" href="covid_1.html">Covid Cases per Country</a>
+                <a class="nav-item nav-link" href="viz1.html">Covid Cases Distribution by Continent</a>
+                <a class="nav-item nav-link" href="viz2.html">Life Expectancy by Continent</a>
                 <a class="nav-item nav-link" href="covid_2.html">Daily Covid Cases</a>
                 <a class="nav-item nav-link" href="covid_3.html">Daily Covid Deaths</a>
                 <a class="nav-item nav-link" href="covid_4.html">Stringency Index</a>
@@ -44,16 +63,25 @@
                 <a class="nav-item nav-link" href="air_2.html">Air Fatalities per Location</a>
                 <a class="nav-item nav-link" href="all.html">Accidents vs Covid Rate</a>
                 <a class="nav-item nav-link" href="two.html">Stringency Index vs Accident Rate</a>
-                <a class="nav-item nav-link" href="viz1.html">Total Cases Distribution by Continent</a>
-                <a class="nav-item nav-link" href="viz2.html">Bar Chart of Life Expectancy by Continent</a>
             </div>
         </div>
     </nav>
-   <div>
-    <h1><b>CSCE 5320 SCIENTIFIC DATA VISUALIZATION</b></h1>
-    <h2><b>Project submitted by Lakshmi Keerthi Gopireddy, Siri Chandana Siripurapu, Aadesh Upadhyay, Shaik Sajid Ali</b></h2>
-    <h3><b>Welcome to the COVID-19 Visualization Dashboard, a platform that provides various aspects of the global pandemic. This dashboard offers various interactive visualizations, each designed to explore a specific facet of the COVID-19 crisis. By clicking on the above links, you will be able to navigate to different visualizations in new tabs, allowing you to examine each one independently without losing your place on the main navigation page.</b></h3>
-</div>
 
+    <div class="container mt-5">
+        <h1> Impact of Covid-19 Pandemic on Air and Road Accidents</h1>
+        <h3> Welcome to the COVID-19 Visualization Dashboard</h3>
+        <p class="p-right-gap">This platform provides various aspects of the global pandemic. It offers interactive visualizations, each designed to explore a specific facet of the COVID-19 crisis. Click on the links above to navigate through different visualizations in new tabs, allowing you to examine each one independently without losing your place on this navigation page.</p>
+        <h2> Project submitted by:</h2>
+        <ul>
+            <li>Lakshmi Keerthi Gopireddy</li>
+            <li>Siri Chandana Siripurapu</li>
+            <li>Aadesh Upadhyay</li>
+            <li>Shaik Sajid Ali</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

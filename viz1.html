@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Total Cases Distribution by Continent</title>
+    <title>Interactive Data Visualization</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,7 +15,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        /* Adjust the styling for your content as needed */
         .container {
             padding-top: 100px; /* Space for the fixed navbar */
             text-align: center;
@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,10 +34,12 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="covid_1.html">Covid Cases per Country</a>
+                <a class="nav-item nav-link active" href="viz1.html">Covid Cases Distribution by Continent</a>
+                <a class="nav-item nav-link" href="viz2.html">Life Expectancy by Continent</a>
                 <a class="nav-item nav-link" href="covid_2.html">Daily Covid Cases</a>
                 <a class="nav-item nav-link" href="covid_3.html">Daily Covid Deaths</a>
                 <a class="nav-item nav-link" href="covid_4.html">Stringency Index</a>
-                <a class="nav-item nav-link" href="car_1.html">Accident Severity by Vehicle Type</a>
+                <a class="nav-item nav-link" href="car_1.html">Accident type vs Vehicle type</a>
                 <a class="nav-item nav-link" href="car_2.html">Casualties per Location</a>
                 <a class="nav-item nav-link" href="air_1.html">Air Fatalities per Day</a>
                 <a class="nav-item nav-link" href="air_2.html">Air Fatalities per Location</a>
@@ -46,12 +48,16 @@
             </div>
         </div>
     </nav>
-
     <div class="container">
-        <h1>Total Cases Distribution by Continent</h1>
-        <img src="vis2.png" alt="Total Cases Distribution by Continent">
+        <h1 class="text-white">COVID-19 Total Cases per Continent</h1>
+        <!-- Image Placeholder -->
+        <img src="vis2.png" alt="Total number of cases per continent" style="width: 60%; display: block; margin: 0 auto;">
+        <!-- Description of the Visualization -->
+        <div class="description">
+            <p>This interactive visualization displays the total number of COVID-19 cases reported per country. Hover over the graph to see detailed numbers for each country. This visualization helps in understanding the global spread and impact of the COVID-19 pandemic.</p>
+        </div>
     </div>
-
+    <!-- Load Bootstrap's JavaScript components -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
