@@ -19,6 +19,14 @@
             padding-top: 100px; /* Space for the fixed navbar */
             text-align: center;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         img {
             max-width: 100%;
             height: auto;
@@ -48,12 +56,15 @@
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <h1> Life Expectancy by Continent</h1>
+    
+    <div class="container mt-5">
+        <h1 class="text-white">Life Expectancy by Continent</h1>
         <img src="vis1.png" alt="Total number of cases per country" style="width: 60%; display: block; margin: 0 auto;">
+        <div class="description">
+            <p>This visualization is a bar graph which represents the life expectancy in each continent. Life expectancy represents the average number of years of a person in a certain area or continent in this graph. From the graph, we can see that the life expectancy is greater for Europe, North America, Oceania than Asia, Africa and South America. 
+            </p>
+        </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

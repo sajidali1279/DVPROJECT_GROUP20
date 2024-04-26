@@ -20,6 +20,14 @@
             height: 450px;
             margin: 50px auto;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         .container {
             padding-top: 100px; /* Space for the fixed navbar */
         }
@@ -52,7 +60,8 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
+        <h1 class="text-white">Accident type vs Vehicle type</h1>
         <div id="chart"></div>
         <script>
             var url = 'https://raw.githubusercontent.com/lakshmi-keerthi/lakshmi-keerthi.github.io/main/road_accidents_cleaned.csv';
@@ -89,6 +98,10 @@
                 Plotly.newPlot('chart', plotData, layout);
             });
         </script>
+        <div class="description">
+            <p>This visualization is a stacked bar graph for road accidents dataset where the x-axis has the Vehicle type and the y-axis has the number of accidents. Each color on the bars represents the severity of the accidents. Red represents Fatal, green represents fetal, orange represents slight and blue represents serious accidents. We can see that the highest number of accidents are reported for cars and by hovering over the graph we can see the exact number of accidents in each case. For car, number of serious accidents are around 13k, fetal are 36, slight are 87k and fatal are 1455.
+            </p>
+        </div>       
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

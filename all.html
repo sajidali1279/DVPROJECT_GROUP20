@@ -14,6 +14,14 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         .container {
             padding-top: 100px; /* Space for the fixed navbar */
         }
@@ -46,8 +54,8 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Updated Tableau Visualization Embed Code -->
+    <div class="container mt-5">
+        <h1 class="text-white">No.of Accidents vs Covid positive rate </h1>
         <div class='tableauPlaceholder' id='viz1713862030877' style='position: relative'>
             <noscript>
                 <a href='#'><img alt='Accidents vs Covid Cases' src='https://public.tableau.com/static/images/Ac/AccidentsvsCovidCases/AccidentsvsCovidCases/1_rss.png' style='border: none'/></a>
@@ -76,6 +84,9 @@
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
+        <div class="description">
+            <p>This visualization is a multi bar chart where each color represents a number from each dataset. The purple color represents the number of causalities in road accidents, blue color represents the number of fatalities in airplane crashes and the orange color represents the number of new covid cases. This graph is necessary to compare the correlation between number of new covid cases and number of deaths due to road and plane accidents. For each month, we can observe the trend and gain insights. Here the values are fluctuating and no particular pattern can be observed in the timeline we have. By hovering over the graph, we can get the exact numbers.</p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

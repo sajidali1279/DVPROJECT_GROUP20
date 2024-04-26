@@ -19,6 +19,14 @@
             padding-top: 100px; /* Space for the fixed navbar */
             text-align: center;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         img {
             max-width: 100%;
             height: auto;
@@ -48,13 +56,12 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container mt-5">
         <h1 class="text-white">COVID-19 Total Cases per Continent</h1>
-        <!-- Image Placeholder -->
         <img src="vis2.png" alt="Total number of cases per continent" style="width: 60%; display: block; margin: 0 auto;">
-        <!-- Description of the Visualization -->
         <div class="description">
-            <p>This interactive visualization displays the total number of COVID-19 cases reported per country. Hover over the graph to see detailed numbers for each country. This visualization helps in understanding the global spread and impact of the COVID-19 pandemic.</p>
+            <p>This visualization is a pie chart which is generally used to display and analyze the distribution of any kind of data. As we have 7 continents, pie chart is useful to display the distribution of total covid cases till date (last day in the dataset) across all continents. From the graph, we can see that Asia is having the highest number of cases followed by Europe and the lowest is Oceania (Australia). We can see that the percentages are visible on the graph for each region. We can also observe that the number of cases in Asia and Europe cover more than 50% of the total cases in the world.
+            </p>
         </div>
     </div>
     <!-- Load Bootstrap's JavaScript components -->

@@ -14,6 +14,14 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         .container {
             padding-top: 100px; /* Space for the fixed navbar */
         }
@@ -46,8 +54,8 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Tableau Visualization Embed Code -->
+    <div class="container mt-5">
+        <h1 class="text-white">Number of Fatalities due to Airplane Crashes per Day</h1>
         <div class='tableauPlaceholder' id='viz1713859494089' style='position: relative'>
             <noscript>
                 <a href='#'><img alt='Sheet 2 ' src='https://public.tableau.com/static/images/Ti/TimelineofAirplaneFatalities/Sheet2/1_rss.png' style='border: none' /></a>
@@ -77,6 +85,9 @@
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
+        <div class="description">
+            <p>This visualization is a line graph containing information about the number of fatalities in airplane crashes from 1908 to 2023. We can observe the trend of fatalities by using the above graph.  We can see that the number of fatalities is low till 1940 and then we see a spike in the number of cases. We can analyze the trend of fatalities across the years provided and the area of interest for is during the pandemic. By hovering over the graph, we can get the number of fatalities in each year, for example in 1945 the number of fatalities are 1360.</p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

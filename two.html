@@ -17,6 +17,14 @@
         .container {
             padding-top: 100px; /* Space for the fixed navbar */
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         .navbar {
             z-index: 1000; /* Ensures the navbar is always on top */
         }
@@ -46,8 +54,8 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Updated Tableau Visualization Embed Code -->
+    <div class="container mt-5">
+        <h1 class="text-white">Stringency Index vs Number of Accidents</h1>
         <div class='tableauPlaceholder' id='viz1713862397304' style='position: relative'>
             <noscript>
                 <a href='#'><img alt='Stringency Index vs Accident Casualities' src='https://public.tableau.com/static/images/St/StringencyIndexvsAccidentCasualities/StringencyIndexvsAccidentCasualities/1_rss.png' style='border: none'/></a>
@@ -77,6 +85,10 @@
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
+        <div class="description">
+            <p>This graph is multi line graph where each color represents a number or trend. Blue color represents the number of causalities and purple color represents the stringency index. Using this we can observe whether there is any correlation between stringency index and the number of causalities.  We do not observe any particular pattern but at some places we can see that when the strigency index is dropped the number of causalities dropped.
+            </p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -19,6 +19,14 @@
             padding-top: 100px; /* Space for the fixed navbar */
             text-align: center;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         #chart {
             background-color: #f8f8f8; /* Off-white background color for the chart container */
             margin: auto;
@@ -65,8 +73,8 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>COVID-19 Stringency Index vs Sum of New Cases</h1>
+    <div class="container mt-5">
+        <h1 class="text-white">COVID-19 Stringency Index vs Sum of New Cases</h1>
         <div id="chart"></div>
         <script>
             const margin = {top: 40, right: 20, bottom: 60, left: 70},
@@ -138,6 +146,10 @@
                    .text('New Cases');
             });
         </script>
+        <div class="description">
+            <p> This visualization helps in understanding the global spread and impact of the COVID-19 pandemic. This visualization is a scatter plot for stringency index vs number of new cases. Stringency index represents the strictness of the regulations during the pandemic. We cannot very clearly see a difference when the rules are stricter but from the graph we can say that the number of new cases we lesser when the stringency index was either low or high. We can see an increase in the number of cases after 35 and till 85. This can be used to know the correlation between the strictness of pandemic and the number of new cases.
+            </p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

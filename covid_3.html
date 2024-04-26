@@ -14,12 +14,13 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
         .description {
             margin-top: 20px;
             color: white;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
-            border-radius: 10px;
         }
         .container {
             padding-top: 80px; /* Adds spacing for content below the navbar */
@@ -82,7 +83,8 @@
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
         <div class="description">
-            <p>This interactive visualization shows the daily reported deaths due to COVID-19. It provides a detailed view of the timeline, highlighting the severity and impact of the pandemic over time.</p>
+            <p>This interactive visualization shows the daily reported deaths due to COVID-19. It provides a detailed view of the timeline, highlighting the severity and impact of the pandemic over time.The visualization is a bar chart representing the total number of deaths for each month. This can be expanded to days. We can see that the highest number of deaths are observed in January 2021 with a number of 1,054,587 and the lowest in January 2020. We can observe the spike in the covid deaths during November 2020. 
+            </p>
         </div>
     </div>
 

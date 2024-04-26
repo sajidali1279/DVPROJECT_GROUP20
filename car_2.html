@@ -10,10 +10,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('Pandemic-carwash_small.jpg'); /* Adjust to the correct path */
+            background-image: url('Pandemic-carwash_small.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+        .text-white {
+            color: white;
+            text-align: center;
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
         }
         #chart {
             width: 1000px;
@@ -21,10 +29,10 @@
             margin: 50px auto;
         }
         .container {
-            padding-top: 100px; /* Space for the fixed navbar */
+            padding-top: 100px;
         }
         .navbar {
-            z-index: 1000; /* Ensures the navbar is always on top */
+            z-index: 1000;
         }
     </style>
 </head>
@@ -52,7 +60,8 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
+        <h1 class="text-white">Number of causalities reported for per location</h1>
         <div id="chart"></div>
         <script>
             var url = 'https://raw.githubusercontent.com/lakshmi-keerthi/lakshmi-keerthi.github.io/main/road_accidents_cleaned.csv';
@@ -101,6 +110,10 @@
                 Plotly.newPlot('chart', plotData, layout);
             });
         </script>
+       <div class="description">
+        <p>This graph is a bar graph representing the number of causalities reported in each location. This graph can be used to identify the highest, lowest number of causalities. We can see that the accident causalities in Birmingham are the highest with 4519. We can observe that this location has the highest and is much greater than all other locations. There are around 5 outlying locations which have higher causalities than other locations.
+        </p>
+    </div>  
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

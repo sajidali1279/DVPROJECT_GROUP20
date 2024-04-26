@@ -14,9 +14,13 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
         .description {
             margin-top: 20px;
-            color: white; /* Ensures text visibility against a potentially dark background */
+            color: white;
         }
         .container {
             margin-top: 20px;
@@ -81,7 +85,8 @@
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
         <div class="description">
-            <p>This interactive visualization shows the daily new cases of COVID-19. Explore trends over time and understand the waves of the pandemic.</p>
+            <p>The above graph is a horizontal bar graph with date, month and year on y-axis and number of new cases in x-axis. We can see that the timeline is from January 2020 to March 2022 and can be expanded into days if needed. For comparison in months, we are considering the timeline to be divided into months and the highest number of new cases can be observed in January 2022.By hovering over the graph, we can get the exact number of cases for example, in January 2022, total number of new cases are 250,135,770.  
+            </p>
         </div>
     </div>
     <!-- Bootstrap's JavaScript components -->

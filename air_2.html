@@ -14,6 +14,14 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        .text-white {
+            color: white; /* assuming you already have other styles */
+            text-align: center; /* adds center alignment to the text */
+        }       
+        .description {
+            margin-top: 20px;
+            color: white;
+        }
         .container {
             padding-top: 100px; /* Space for the fixed navbar */
         }
@@ -46,8 +54,8 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Tableau Visualization Embed Code -->
+    <div class="container mt-5">
+        <h1 class="text-white">Number of Fatalities due to Airplane Crashes in each Country</h1>
         <div class='tableauPlaceholder' id='viz1713859125631' style='position: relative'>
             <noscript>
                 <a href='#'><img alt='Airplane Fatalities by Country' src='https://public.tableau.com/static/images/FM/FM78MHWNY/1_rss.png' style='border: none'/></a>
@@ -74,6 +82,10 @@
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
+        <div class="description">
+            <p>This visualization is a map which represents the number of fatalities due to airplane crashes for each country over the period. For each location coloured in the graph, we have the number of fatalities and this can be obtained by hovering over the graph. For example, Russia is represented in pale teal color and the total number of fatalities are 558. We can get the fatalities for each country and can be useful for further analysis.
+            </p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
